@@ -1,0 +1,256 @@
+layout: {qmk_keyboard: sofle/rev1}
+layers:
+  default:
+  - {t: '`', s: '~'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '-', s: _}
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '[', s: '{'}
+  - $$mdi:keyboard-tab$$
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
+  - {t: '''', s: '"'}
+  - {t: ']', s: '}'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: \, s: '|'}
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-command$$
+  - nav
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - sym
+  - $$mdi:apple-keyboard-command$$
+  - ''
+  - ''
+  nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - HOME
+  - $$mdi:arrow-up$$
+  - END
+  - PAGE UP
+  - ''
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - +
+  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - PAGE DOWN
+  - F12
+  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$', s: '%'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - ''
+  - {t: nav, h: '$$tabler:arrow-left-to-arc$$'}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
+  - ''
+  - ''
+  - ''
+  - {t: default, h: '$$tabler:arrow-left-to-arc$$'}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - media
+  - {t: '0', s: )}
+  - {t: ., s: '>'}
+  - ''
+  sym:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '|'
+  - ''
+  - {t: '`', s: '~'}
+  - {t: '''', s: '"'}
+  - '"'
+  - {t: ;, s: ':'}
+  - ''
+  - ':'
+  - '?'
+  - +
+  - {t: '-', s: _}
+  - ''
+  - ''
+  - ''
+  - '~'
+  - \
+  - {t: /, s: '?'}
+  - '{'
+  - '}'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '=', s: +}
+  - _
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - media
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  media:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - {t: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '5', s: '$$mdi:bluetooth-connect$$'}
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - Soft Off
+  - BT CLR ALL
+  - BT PRV
+  - BT NXT
+  - PrtScr File
+  - PrtScr Mem
+  - $$mdi:play-pause$$
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - OUT TOG
+  - ''
+  - ''
+  - $$mdi:skip-backward$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-forward$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+combos:
+- p: [25, 34]
+  k: Caps Word
+  l: [default]
+- p: [20, 21]
+  k: $$mdi:backspace$$
+  l: [default, nav]
+- p: [15, 14]
+  k: $$mdi:backspace-reverse$$
+  l: [default, nav]

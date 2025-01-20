@@ -1,0 +1,264 @@
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30.0
+  combo_w: 28
+  combo_h: 28
+  key_rx: 6.0
+  key_ry: 6.0
+  dark_mode: true
+  n_columns: 1
+  separate_combo_diagrams: true
+  combo_diagrams_scale: 3
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 30.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: false
+  small_pad: 2.0
+  legend_rel_x: 0.0
+  legend_rel_y: 0.0
+  draw_key_sides: false
+  key_side_pars:
+    rel_x: 0.0
+    rel_y: 4.0
+    rel_w: 12.0
+    rel_h: 12.0
+    rx: 4.0
+    ry: 4.0
+
+  footer_text: Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>
+  shrink_wide_legends: 7
+  style_layer_activators: true
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+
+  svg_extra_style: |    
+    .key.hold {
+      fill: orange;
+    }
+    
+    .tabler\:arrow-left-to-arc {
+      color: rgb(60, 179, 113);
+    }
+    
+    .key.tap {
+      fill: rgb(60, 179, 113);
+    }
+    
+    rect.key {
+      fill: rgb(49, 52, 55);
+    }
+    rect.held {
+      fill: rgb(60, 179, 113);
+    }
+    
+    .key.tap.layer-activator {
+      fill: orange;
+    }
+    
+    .key.shifted {
+      fill: cadetblue;
+      translate: 15px 5px;
+    }
+
+parse_config:
+  parse_config:
+    zmk_additional_includes:
+      - "modules/zmk/helpers/include"
+
+    zmk_preamble: |
+      #define CONFIG_WIRELESS
+      #define KEYMAP_DRAWER
+
+  skip_binding_parsing: false
+  sticky_label: sticky
+  toggle_label: "$$tabler:arrow-left-to-arc$$"
+  tap_toggle_label: tap-toggle
+  trans_legend:
+    t: "$$mdi:transfer$$"
+    type: trans
+  layer_legend_map: {}
+  mark_alternate_layer_activators: false
+
+  raw_binding_map:
+    "&caps_word": Caps Word
+    "&soft_off": Soft Off
+    "&printscr_area_file": "PrtScr File"
+    "&printscr_area_mem": "PrtScr Mem"
+
+    "&bt BT_SEL 0":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "1"
+    "&bt BT_SEL 1":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "2"
+    "&bt BT_SEL 2":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "3"
+    "&bt BT_SEL 3":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "4"
+    "&bt BT_SEL 4":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: "5"
+
+  zmk_keycode_map:
+    C_MUTE: $$mdi:volume-off$$
+    C_PLAY_PAUSE: $$mdi:play-pause$$
+    C_VOLUME_UP: $$mdi:volume-high$$
+    C_VOLUME_DOWN: $$mdi:volume-medium$$
+    C_NEXT: $$mdi:skip-forward$$
+    C_PREV: $$mdi:skip-backward$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse$$
+    RET: $$mdi:keyboard-return$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    TAB: $$mdi:keyboard-tab$$
+    ESC: $$mdi:keyboard-esc$$
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
+
+    # default
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL:
+      tap: "="
+      shifted: "+"
+    PLUS: +
+    MINUS:
+      tap: "-"
+      shifted: "_"
+    UNDERSCORE: _
+    UNDER: _
+    SLASH:
+      tap: "/"
+      shifted: "?"
+    FSLH:
+      tap: "/"
+      shifted: "?"
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH:
+      tap: '\'
+      shifted: "|"
+    BSLH:
+      tap: '\'
+      shifted: "|"
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON:
+      tap: ";"
+      shifted: ":"
+    SEMI:
+      tap: ";"
+      shifted: ":"
+    COLON: ':'
+    SINGLE_QUOTE:
+      tap: "'"
+      shifted: '"'
+    SQT:
+      tap: "'"
+      shifted: '"'
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA:
+      tap: ","
+      shifted: "<"
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT:
+      tap: "."
+      shifted: ">"
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET:
+      tap: "["
+      shifted: "{"
+    LBKT:
+      tap: "["
+      shifted: "{"
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET:
+      tap: "]"
+      shifted: "}"
+    RBKT:
+      tap: "]"
+      shifted: "}"
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE:
+      tap: "`"
+      shifted: "~"
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+
+    N1:
+      tap: 1
+      shifted: "!"
+    N2:
+      tap: 2
+      shifted: "@"
+    N3:
+      tap: 3
+      shifted: "#"
+    N4:
+      tap: 4
+      shifted: "$"
+    N5:
+      tap: 5
+      shifted: "%"
+    N6:
+      tap: 6
+      shifted: "^"
+    N7:
+      tap: 7
+      shifted: "&"
+    N8:
+      tap: 8
+      shifted: "*"
+    N9:
+      tap: 9
+      shifted: "("
+    N0:
+      tap: 0
+      shifted: ")"
+

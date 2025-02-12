@@ -230,6 +230,10 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
+    KP_COMMA: ','
+    KP_DOT: '.'
+    KP_MULTIPLY: '*'
+    KP_DIVIDE: '/'
 
     N1:
       tap: 1

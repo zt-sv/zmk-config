@@ -3,6 +3,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+&soft_off {
+    split-peripheral-off-on-press;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -48,6 +52,11 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <18 19 20 21 22 30 31 32 33 34 46 44 45 46 47 48 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 44 45 46 47 48 49>;
         };
+    };
+
+    soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
     };
 
     macros {

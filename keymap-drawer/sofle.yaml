@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   default:
   - {t: '`', s: '~'}
@@ -53,12 +53,12 @@ layers:
   - {t: \, s: '|'}
   - ''
   - ''
-  - $$mdi:apple-keyboard-command$$
+  - ''
   - nav
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
   - sym
-  - $$mdi:apple-keyboard-command$$
+  - ''
   - ''
   - ''
   nav:

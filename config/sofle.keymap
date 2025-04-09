@@ -4,8 +4,16 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&soft_off {
-    split-peripheral-off-on-press;
+&soft_off { split-peripheral-off-on-press; };
+
+&mmv {
+    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <2>;
+};
+
+&msc {
+    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <1>;
 };
 
 / {

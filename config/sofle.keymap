@@ -2,9 +2,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
-&soft_off {
-    split-peripheral-off-on-press;
+&soft_off { split-peripheral-off-on-press; };
+
+&mmv {
+    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <2>;
+};
+
+&msc {
+    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <1>;
 };
 
 / {
@@ -85,7 +94,7 @@
 &kp ESC            &kp Q              &kp W         &kp E            &kp R            &kp T                                   &kp Y   &kp U             &kp I            &kp O         &kp P                  &kp LEFT_BRACKET
 &kp TAB            &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G                                   &kp H   &hmr RIGHT_GUI J  &hmr LEFT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMI  &kp SQT
 &kp RIGHT_BRACKET  &kp Z              &kp X         &kp C            &kp V            &kp B   &kp C_MUTE    &kp C_PLAY_PAUSE  &kp N   &kp M             &kp COMMA        &kp DOT       &kp FSLH               &kp BSLH
-                                      &none         &none            &none            &mo 1   &kp SPACE     &kp RET           &mo 2   &none             &none            &none
+                                      &none         &none            &mo 4            &mo 1   &kp SPACE     &kp RET           &mo 2   &mo 4             &none            &none
             >;
 
             sensor-bindings =
@@ -99,8 +108,8 @@
 &none   &none           &none      &none       &none        &none                            &none         &none                   &none             &none          &none                   &none
 &trans  &none           &kp HOME   &kp UP      &kp END      &kp PAGE_UP                      &kp KP_COMMA  &kp N7                  &kp N8            &kp N9         &kp PLUS                &kp KP_MULTIPLY
 &trans  &kp LEFT_SHIFT  &kp LEFT   &kp DOWN    &kp RIGHT    &kp PAGE_DOWN                    &kp F12       &hmr LEFT_GUI NUMBER_4  &hmr LEFT_ALT N5  &hmr LCTRL N6  &hmr RIGHT_SHIFT MINUS  &kp KP_DIVIDE
-&to 1   &kp K_UNDO      &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none          &trans    &trans  &kp KP_DOT    &kp N1                  &kp N2            &kp N3         &kp EQUAL               &none
-                        &none      &none       &to 0        &trans         &trans    &trans  &mo 3         &kp N0                  &none             &none
+&none   &kp K_UNDO      &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none          &trans    &trans  &kp KP_DOT    &kp N1                  &kp N2            &kp N3         &kp EQUAL               &none
+                        &none      &none       &trans       &trans         &trans    &trans  &mo 3         &kp N0                  &none             &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp RIGHT LEFT>;
@@ -113,7 +122,7 @@
 &none  &kp EXCL   &kp AT                &kp HASH           &kp DOLLAR      &kp PERCENT                        &kp CARET         &kp AMPS           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
 &none  &kp GRAVE  &kp SQT               &kp DOUBLE_QUOTES  &kp SEMICOLON   &none                              &kp COLON         &kp QUESTION       &kp PLUS   &kp MINUS             &none                  &none
 &none  &kp TILDE  &kp NON_US_BACKSLASH  &kp SLASH          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp UNDER             &none                  &none
-                  &none                 &none              &none           &mo 3            &trans    &trans  &trans            &none              &none      &none
+                  &none                 &none              &trans          &mo 3            &trans    &trans  &trans            &none              &none      &none
             >;
         };
 
@@ -124,10 +133,21 @@
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2         &bt BT_SEL 3        &bt BT_SEL 4                        &none   &kp F9  &kp F10  &kp F11  &kp F12  &soft_off
 &bt BT_CLR_ALL  &bt BT_PRV    &bt BT_NXT    &printscr_area_file  &printscr_area_mem  &kp C_PLAY_PAUSE                    &none   &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_TOG
 &none           &none         &kp C_PREV    &kp C_VOLUME_DOWN    &kp C_VOLUME_UP     &kp C_NEXT        &trans    &trans  &none   &kp F1  &kp F2   &kp F3   &kp F4   &none
-                              &none         &none                &none               &trans            &trans    &trans  &trans  &none   &none    &none
+                              &none         &none                &trans              &trans            &trans    &trans  &trans  &none   &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp RIGHT LEFT>;
+        };
+
+        mouse {
+            display-name = "mouse";
+            bindings = <
+&none  &none  &none           &none           &none            &none                     &none      &none           &none           &none            &none  &none
+&none  &none  &none           &msc SCRL_UP    &none            &none                     &mkp MCLK  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none  &none
+&none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none                     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none  &none  &none           &none           &none            &none   &trans    &trans  &none      &none           &none           &none            &none  &none
+              &none           &none           &trans           &trans  &trans    &trans  &trans     &trans          &none           &none
+            >;
         };
     };
 };

@@ -90,6 +90,15 @@ parse_config:
     "&printscr_area_file": "PrtScr File"
     "&printscr_area_mem": "PrtScr Mem"
 
+    "&mmv MOVE_UP": $$mdi:mouse-move-up$$
+    "&mmv MOVE_DOWN": $$mdi:mouse-move-down$$
+    "&mmv MOVE_LEFT": $$mdi:volume-off$$
+    "&mmv MOVE_RIGHT": $$mdi:volume-off$$
+
+    "&mkp LCLK": $$mdi:mouse-left-click-outline$$
+    "&mkp MCLK": $$mdi:volume-off$$
+    "&mkp RCLK": $$mdi:mouse-right-click-outline$$
+
     "&bt BT_SEL 0":
       shifted: $$mdi:bluetooth-connect$$
       tap: "1"

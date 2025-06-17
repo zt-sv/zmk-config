@@ -47,7 +47,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-key-positions = <13 14 15 16 17 26 27 28 29 41 38 39 40 25 37 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 38 39 40 41 36>;
         };
 
@@ -58,7 +58,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-key-positions = <18 19 20 21 22 30 31 32 33 34 46 44 45 46 47 48 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 44 45 46 47 48 49>;
         };
     };
@@ -90,11 +90,11 @@
         default_layer {
             display-name = "default";
             bindings = <
-&kp GRAVE          &kp N1             &kp N2        &kp N3           &kp N4           &kp N5                                  &kp N6  &kp N7            &kp N8           &kp N9        &kp N0                 &kp MINUS
-&kp ESC            &kp Q              &kp W         &kp E            &kp R            &kp T                                   &kp Y   &kp U             &kp I            &kp O         &kp P                  &kp LEFT_BRACKET
-&kp TAB            &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G                                   &kp H   &hmr RIGHT_GUI J  &hmr LEFT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMI  &kp SQT
-&kp RIGHT_BRACKET  &kp Z              &kp X         &kp C            &kp V            &kp B   &kp C_MUTE    &kp C_PLAY_PAUSE  &kp N   &kp M             &kp COMMA        &kp DOT       &kp FSLH               &kp BSLH
-                                      &none         &none            &mo 4            &mo 1   &kp SPACE     &kp RET           &mo 2   &mo 4             &none            &none
+&kp GRAVE          &kp N1             &kp N2        &kp N3           &kp N4           &kp N5                                     &kp N6     &kp N7            &kp N8           &kp N9        &kp N0                 &kp MINUS
+&kp ESC            &kp Q              &kp W         &kp E            &kp R            &kp T                                      &kp Y      &kp U             &kp I            &kp O         &kp P                  &kp LEFT_BRACKET
+&kp TAB            &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G                                      &kp H      &hmr RIGHT_GUI J  &hmr LEFT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMI  &kp SQT
+&kp RIGHT_BRACKET  &kp Z              &kp X         &kp C            &kp V            &kp B      &kp C_MUTE    &kp C_PLAY_PAUSE  &kp N      &kp M             &kp COMMA        &kp DOT       &kp FSLH               &kp BSLH
+                                      &none         &none            &mo 4            &lt 1 TAB  &kp SPACE     &kp RET           &lt 2 ESC  &mo 4             &none            &none
             >;
 
             sensor-bindings =
@@ -118,11 +118,11 @@
         symbols {
             display-name = "sym";
             bindings = <
-&none  &none      &none                 &none              &none           &none                              &none             &none              &none      &none                 &none                  &none
-&none  &kp EXCL   &kp AT                &kp HASH           &kp DOLLAR      &kp PERCENT                        &kp CARET         &kp AMPS           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&none  &kp GRAVE  &kp SQT               &kp DOUBLE_QUOTES  &kp SEMICOLON   &none                              &kp COLON         &kp QUESTION       &kp PLUS   &kp MINUS             &none                  &none
-&none  &kp TILDE  &kp NON_US_BACKSLASH  &kp SLASH          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp UNDER             &none                  &none
-                  &none                 &none              &trans          &mo 3            &trans    &trans  &trans            &none              &none      &none
+&none  &none            &none      &none              &none           &none                              &none             &none              &none      &none                 &none                  &none
+&none  &kp EXCL         &kp AT     &kp HASH           &kp DOLLAR      &kp PERCENT                        &kp CARET         &kp AMPS           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&none  &kp NON_US_BSLH  &kp SQT    &kp DOUBLE_QUOTES  &kp SEMICOLON   &none                              &kp COLON         &kp QUESTION       &kp PLUS   &kp MINUS             &none                  &none
+&none  &kp TILDE        &kp GRAVE  &kp SLASH          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp UNDER             &none                  &none
+                        &none      &none              &trans          &mo 3            &trans    &trans  &trans            &none              &none      &none
             >;
         };
 
@@ -143,7 +143,7 @@
             display-name = "mouse";
             bindings = <
 &none  &none  &none           &none           &none            &none                     &none      &none           &none           &none            &none  &none
-&none  &none  &none           &msc SCRL_UP    &none            &none                     &mkp MCLK  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none  &none
+&none  &none  &mkp RCLK       &msc SCRL_UP    &mkp LCLK        &none                     &mkp MCLK  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none  &none
 &none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none                     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
 &none  &none  &none           &none           &none            &none   &trans    &trans  &none      &none           &none           &none            &none  &none
               &none           &none           &trans           &trans  &trans    &trans  &trans     &trans          &none           &none

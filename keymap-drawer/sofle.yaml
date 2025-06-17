@@ -54,10 +54,10 @@ layers:
   - ''
   - ''
   - mouse
-  - nav
+  - {t: '$$mdi:keyboard-tab$$', h: nav}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
-  - sym
+  - {t: '$$mdi:keyboard-esc$$', h: sym}
   - mouse
   - ''
   - ''
@@ -148,7 +148,7 @@ layers:
   - )
   - '|'
   - ''
-  - {t: '`', s: '~'}
+  - '|'
   - {t: '''', s: '"'}
   - '"'
   - {t: ;, s: ':'}
@@ -161,7 +161,7 @@ layers:
   - ''
   - ''
   - '~'
-  - \
+  - {t: '`', s: '~'}
   - {t: /, s: '?'}
   - '{'
   - '}'
@@ -259,14 +259,14 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - $$mdi:mouse-right-click-outline$$
   - '&msc SCRL_UP'
+  - $$mdi:mouse-left-click-outline$$
   - ''
-  - ''
-  - '&mkp MCLK'
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - '&mkp RCLK'
+  - $$mdi:volume-off$$
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-move-up$$
+  - $$mdi:mouse-right-click-outline$$
   - ''
   - ''
   - ''
@@ -276,9 +276,9 @@ layers:
   - '&msc SCRL_RIGHT'
   - ''
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - $$mdi:volume-off$$
+  - $$mdi:mouse-move-down$$
+  - $$mdi:volume-off$$
   - ''
   - ''
   - ''

@@ -119,8 +119,8 @@
             display-name = "sym";
             bindings = <
 &none  &none            &none      &none              &none           &none                              &none             &none              &none      &none                 &none                  &none
-&none  &kp EXCL         &kp AT     &kp HASH           &kp DOLLAR      &kp PERCENT                        &kp CARET         &kp AMPS           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&none  &kp NON_US_BSLH  &kp SQT    &kp DOUBLE_QUOTES  &kp SEMICOLON   &none                              &kp COLON         &kp QUESTION       &kp PLUS   &kp MINUS             &none                  &none
+&none  &kp EXCL         &kp AT     &kp HASH           &kp DOLLAR      &kp PERCENT                        &kp CARET         &kp AMPS           &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &kp NON_US_BSLH  &kp SQT    &kp DOUBLE_QUOTES  &kp SEMICOLON   &none                              &kp COLON         &kp QUESTION       &kp PLUS   &kp MINUS             &kp PIPE               &none
 &none  &kp TILDE        &kp GRAVE  &kp SLASH          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp UNDER             &none                  &none
                         &none      &none              &trans          &mo 3            &trans    &trans  &trans            &none              &none      &none
             >;

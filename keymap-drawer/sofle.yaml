@@ -196,30 +196,30 @@ layers:
   - ''
   - ''
   - ''
-  - BT CLR
+  - ''
   - {t: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '4', s: '$$mdi:bluetooth-connect$$'}
   - {t: '5', s: '$$mdi:bluetooth-connect$$'}
-  - ''
+  - Soft Off
   - F9
   - F10
   - F11
   - F12
-  - Soft Off
-  - BT CLR ALL
+  - ''
+  - ''
   - BT PRV
   - BT NXT
   - PrtScr File
   - PrtScr Mem
   - $$mdi:play-pause$$
-  - ''
+  - BT CLR
   - F5
   - F6
   - F7
   - F8
-  - OUT TOG
+  - ''
   - ''
   - ''
   - $$mdi:skip-backward$$
@@ -228,7 +228,7 @@ layers:
   - $$mdi:skip-forward$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
+  - BT CLR ALL
   - F1
   - F2
   - F3
@@ -315,3 +315,31 @@ combos:
 - p: [15, 14]
   k: $$mdi:backspace-reverse$$
   l: [default, nav]
+- p: [17, 16]
+  k: {t: ']', s: '}'}
+- p: [16, 15]
+  k: {t: '[', s: '{'}
+- p: [17, 15]
+  k: '&macro_brackets'
+- p: [18, 19]
+  k: (
+- p: [19, 20]
+  k: )
+- p: [18, 20]
+  k: '&macro_parentheses'
+- p: [39, 40]
+  k: '{'
+- p: [41, 40]
+  k: '}'
+- p: [41, 39]
+  k: '&macro_braces'
+- p: [44, 45]
+  k: <
+- p: [45, 46]
+  k: '>'
+- p: [44, 46]
+  k: '&macro_ltgt'
+- p: [15, 26]
+  k: {t: /, s: '?'}
+- p: [20, 33]
+  k: {t: \, s: '|'}

@@ -317,29 +317,43 @@ combos:
   l: [default, nav]
 - p: [17, 16]
   k: {t: ']', s: '}'}
+  l: [default]
 - p: [16, 15]
   k: {t: '[', s: '{'}
+  l: [default]
 - p: [17, 15]
   k: '&macro_brackets'
+  l: [default]
 - p: [18, 19]
   k: (
+  l: [default]
 - p: [19, 20]
   k: )
+  l: [default]
 - p: [18, 20]
   k: '&macro_parentheses'
+  l: [default]
 - p: [39, 40]
   k: '{'
+  l: [default]
 - p: [41, 40]
   k: '}'
+  l: [default]
 - p: [41, 39]
   k: '&macro_braces'
+  l: [default]
 - p: [44, 45]
   k: <
+  l: [default]
 - p: [45, 46]
   k: '>'
+  l: [default]
 - p: [44, 46]
   k: '&macro_ltgt'
+  l: [default]
 - p: [15, 26]
   k: {t: /, s: '?'}
+  l: [default]
 - p: [20, 33]
   k: {t: \, s: '|'}
+  l: [default]

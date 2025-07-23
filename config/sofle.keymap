@@ -51,71 +51,85 @@
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <17 16>;
+            layers = <0>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 15>;
+            layers = <0>;
         };
 
         brackets {
             bindings = <&macro_brackets>;
             key-positions = <17 15>;
+            layers = <0>;
         };
 
         left_parentheses {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         right_parentheses {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
+            layers = <0>;
         };
 
         parentheses {
             bindings = <&macro_parentheses>;
             key-positions = <18 20>;
+            layers = <0>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <39 40>;
+            layers = <0>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <41 40>;
+            layers = <0>;
         };
 
         braces {
             bindings = <&macro_braces>;
             key-positions = <41 39>;
+            layers = <0>;
         };
 
         lt {
             bindings = <&kp LESS_THAN>;
             key-positions = <44 45>;
+            layers = <0>;
         };
 
         gt {
             bindings = <&kp GREATER_THAN>;
             key-positions = <45 46>;
+            layers = <0>;
         };
 
         ltgt {
             bindings = <&macro_ltgt>;
             key-positions = <44 46>;
+            layers = <0>;
         };
 
         slash {
             bindings = <&kp SLASH>;
             key-positions = <15 26>;
+            layers = <0>;
         };
 
         backslash {
             bindings = <&kp BSLH>;
             key-positions = <20 33>;
+            layers = <0>;
         };
     };
 

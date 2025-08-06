@@ -1,0 +1,239 @@
+layout: {zmk_keyboard: ztsvcosmos}
+layers:
+  base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - mouse
+  - {t: '$$mdi:keyboard-tab$$', h: nav}
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:keyboard-esc$$', h: sym}
+  - mouse
+  nav:
+  - ''
+  - HOME
+  - $$mdi:arrow-up$$
+  - END
+  - PAGE UP
+  - ','
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - +
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - PAGE DOWN
+  - F12
+  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$', s: '%'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - ''
+  - .
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - media
+  - {t: '0', s: )}
+  sym:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '|'
+  - {t: '''', s: '"'}
+  - '"'
+  - {t: ;, s: ':'}
+  - ''
+  - ':'
+  - '?'
+  - +
+  - {t: '-', s: _}
+  - '|'
+  - '~'
+  - {t: '`', s: '~'}
+  - {t: /, s: '?'}
+  - '{'
+  - '}'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '=', s: +}
+  - _
+  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - media
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - ''
+  media:
+  - {t: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '5', s: '$$mdi:bluetooth-connect$$'}
+  - Soft Off
+  - F9
+  - F10
+  - F11
+  - F12
+  - BT PRV
+  - BT NXT
+  - PrtScr File
+  - PrtScr Mem
+  - $$mdi:play-pause$$
+  - BT CLR
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - $$mdi:skip-backward$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-forward$$
+  - BT CLR ALL
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - ''
+  mouse:
+  - ''
+  - $$mdi:mouse-right-click-outline$$
+  - '&msc SCRL_UP'
+  - $$mdi:mouse-left-click-outline$$
+  - ''
+  - $$mdi:volume-off$$
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-move-up$$
+  - $$mdi:mouse-right-click-outline$$
+  - ''
+  - ''
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
+  - ''
+  - ''
+  - $$mdi:volume-off$$
+  - $$mdi:mouse-move-down$$
+  - $$mdi:volume-off$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [25, 34]
+  k: Caps Word
+  l: [base]
+- p: [20, 21]
+  k: $$mdi:backspace$$
+  l: [base, nav]
+- p: [15, 14]
+  k: $$mdi:backspace-reverse$$
+  l: [base, nav]
+- p: [17, 16]
+  k: {t: ']', s: '}'}
+  l: [base]
+- p: [16, 15]
+  k: {t: '[', s: '{'}
+  l: [base]
+- p: [17, 15]
+  k: '&macro_brackets'
+  l: [base]
+- p: [18, 19]
+  k: (
+  l: [base]
+- p: [19, 20]
+  k: )
+  l: [base]
+- p: [18, 20]
+  k: '&macro_parentheses'
+  l: [base]
+- p: [39, 40]
+  k: '{'
+  l: [base]
+- p: [41, 40]
+  k: '}'
+  l: [base]
+- p: [41, 39]
+  k: '&macro_braces'
+  l: [base]
+- p: [44, 45]
+  k: <
+  l: [base]
+- p: [45, 46]
+  k: '>'
+  l: [base]
+- p: [44, 46]
+  k: '&macro_ltgt'
+  l: [base]
+- p: [15, 26]
+  k: {t: /, s: '?'}
+  l: [base]
+- p: [20, 33]
+  k: {t: \, s: '|'}
+  l: [base]

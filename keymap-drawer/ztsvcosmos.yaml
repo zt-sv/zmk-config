@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LSHIFT}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: RSHIFT, s: ':'}
   - Z
   - X
   - C
@@ -54,10 +54,10 @@ layers:
   - $$mdi:arrow-right$$
   - PAGE DOWN
   - F12
-  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-option$$', s: '%'}
-  - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
   - UNDO
   - CUT
   - COPY
@@ -124,8 +124,8 @@ layers:
   - F12
   - BT PRV
   - BT NXT
-  - PrtScr File
-  - PrtScr Mem
+  - '&prntscr_file'
+  - '&prntscr_mem'
   - $$mdi:play-pause$$
   - BT CLR
   - F5
@@ -186,54 +186,54 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [25, 34]
+- p: [19, 10]
   k: Caps Word
   l: [base]
-- p: [20, 21]
+- p: [7, 8]
   k: $$mdi:backspace$$
   l: [base, nav]
-- p: [15, 14]
+- p: [1, 2]
   k: $$mdi:backspace-reverse$$
   l: [base, nav]
-- p: [17, 16]
+- p: [3, 4]
   k: {t: ']', s: '}'}
   l: [base]
-- p: [16, 15]
+- p: [2, 3]
   k: {t: '[', s: '{'}
   l: [base]
-- p: [17, 15]
+- p: [4, 2]
   k: '&macro_brackets'
   l: [base]
-- p: [18, 19]
+- p: [5, 6]
   k: (
   l: [base]
-- p: [19, 20]
+- p: [6, 7]
   k: )
   l: [base]
-- p: [18, 20]
+- p: [5, 7]
   k: '&macro_parentheses'
   l: [base]
-- p: [39, 40]
+- p: [22, 23]
   k: '{'
   l: [base]
-- p: [41, 40]
+- p: [24, 23]
   k: '}'
   l: [base]
-- p: [41, 39]
+- p: [22, 24]
   k: '&macro_braces'
   l: [base]
-- p: [44, 45]
+- p: [25, 26]
   k: <
   l: [base]
-- p: [45, 46]
+- p: [26, 27]
   k: '>'
   l: [base]
-- p: [44, 46]
+- p: [25, 27]
   k: '&macro_ltgt'
   l: [base]
-- p: [15, 26]
+- p: [2, 11]
   k: {t: /, s: '?'}
   l: [base]
-- p: [20, 33]
+- p: [7, 18]
   k: {t: \, s: '|'}
   l: [base]

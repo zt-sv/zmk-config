@@ -73,10 +73,10 @@ parse_config:
     '&printscr_area_mem': PrtScr Mem
     '&prntscr_file': PrtScr File
     '&prntscr_mem': PrtScr Mem
-    '&macro_brackets': []
-    '&macro_parentheses': ()
-    '&macro_braces': {}
-    '&macro_ltgt': <>
+    '&macro_brackets': "[]"
+    '&macro_parentheses': "()"
+    '&macro_braces': "{}"
+    '&macro_ltgt': "<>"
     '&mmv MOVE_UP': $$mdi:arrow-up-bold$$
     '&mmv MOVE_DOWN': $$mdi:arrow-down-bold$$
     '&mmv MOVE_LEFT': $$mdi:arrow-left-bold$$

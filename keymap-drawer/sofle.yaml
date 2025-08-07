@@ -259,14 +259,14 @@ layers:
   - ''
   - ''
   - ''
-  - $$mdi:mouse-right-click-outline$$
+  - $$phosphor:regular/mouse-right-click$$
   - '&msc SCRL_UP'
-  - $$mdi:mouse-left-click-outline$$
+  - $$phosphor:regular/mouse-left-click$$
   - ''
-  - $$mdi:volume-off$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-move-up$$
-  - $$mdi:mouse-right-click-outline$$
+  - $$phosphor:regular/mouse-middle-click$$
+  - $$phosphor:regular/mouse-left-click$$
+  - $$mdi:arrow-up-bold$$
+  - $$phosphor:regular/mouse-right-click$$
   - ''
   - ''
   - ''
@@ -276,9 +276,9 @@ layers:
   - '&msc SCRL_RIGHT'
   - ''
   - ''
-  - $$mdi:volume-off$$
-  - $$mdi:mouse-move-down$$
-  - $$mdi:volume-off$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - ''
   - ''
   - ''
@@ -322,7 +322,7 @@ combos:
   k: {t: '[', s: '{'}
   l: [default]
 - p: [17, 15]
-  k: '&macro_brackets'
+  k: '[]'
   l: [default]
 - p: [18, 19]
   k: (
@@ -331,7 +331,7 @@ combos:
   k: )
   l: [default]
 - p: [18, 20]
-  k: '&macro_parentheses'
+  k: ()
   l: [default]
 - p: [39, 40]
   k: '{'
@@ -340,7 +340,7 @@ combos:
   k: '}'
   l: [default]
 - p: [41, 39]
-  k: '&macro_braces'
+  k: '{}'
   l: [default]
 - p: [44, 45]
   k: <
@@ -349,7 +349,7 @@ combos:
   k: '>'
   l: [default]
 - p: [44, 46]
-  k: '&macro_ltgt'
+  k: <>
   l: [default]
 - p: [15, 26]
   k: {t: /, s: '?'}

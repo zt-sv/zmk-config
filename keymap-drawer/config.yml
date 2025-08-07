@@ -56,6 +56,23 @@ draw_config:
       fill: cadetblue;
       translate: 15px 5px;
     }
+    
+    rect.combo {
+      fill: #48b95a;
+      stroke: rgb(49, 52, 55);
+    }
+
+    path.combo {
+      stroke: rgb(49, 52, 55);    
+    }
+    
+    svg.keymap {
+      fill: rgb(49, 52, 55);
+    }
+    
+    text.combo {
+      fill: rgb(49, 52, 55);
+    }
   footer_text: Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>
   shrink_wide_legends: 7
   style_layer_activators: true
@@ -352,3 +369,34 @@ parse_config:
 
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
+
+  zmk_combos:
+    'CapsWord':
+      align: top
+      offset: 3
+    backspace:
+      align: mid
+    delete:
+      align: mid
+    right_bracket: {}
+    left_bracket: {}
+    brackets:
+      align: top
+      offset: 0.15
+    left_parentheses: {}
+    right_parentheses: {}
+    parentheses:
+      align: top
+      offset: 0.15
+    left_brace: {}
+    right_brace: {}
+    braces:
+      align: bottom
+      offset: 0.2
+    lt: {}
+    gt: {}
+    ltgt:
+      align: bottom
+      offset: 0.2
+    slash: {}
+    backslash: {}

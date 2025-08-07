@@ -309,6 +309,8 @@ combos:
 - p: [25, 34]
   k: Caps Word
   l: [default]
+  a: top
+  o: 3.0
 - p: [20, 21]
   k: $$mdi:backspace$$
   l: [default, nav]
@@ -324,6 +326,8 @@ combos:
 - p: [17, 15]
   k: '[]'
   l: [default]
+  a: top
+  o: 0.15
 - p: [18, 19]
   k: (
   l: [default]
@@ -333,6 +337,8 @@ combos:
 - p: [18, 20]
   k: ()
   l: [default]
+  a: top
+  o: 0.15
 - p: [39, 40]
   k: '{'
   l: [default]
@@ -342,6 +348,8 @@ combos:
 - p: [41, 39]
   k: '{}'
   l: [default]
+  a: bottom
+  o: 0.2
 - p: [44, 45]
   k: <
   l: [default]
@@ -351,6 +359,8 @@ combos:
 - p: [44, 46]
   k: <>
   l: [default]
+  a: bottom
+  o: 0.2
 - p: [15, 26]
   k: {t: /, s: '?'}
   l: [default]

@@ -8,7 +8,7 @@ draw_config:
   key_ry: 6.0
   dark_mode: true
   n_columns: 1
-  separate_combo_diagrams: true
+  separate_combo_diagrams: false
   combo_diagrams_scale: 3
   inner_pad_w: 2.0
   inner_pad_h: 2.0
@@ -28,93 +28,169 @@ draw_config:
     rel_h: 12.0
     rx: 4.0
     ry: 4.0
-
-  footer_text: Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>
-  shrink_wide_legends: 7
-  style_layer_activators: true
-  glyph_tap_size: 14
-  glyph_hold_size: 12
-  glyph_shifted_size: 10
-
-  svg_extra_style: |    
+  svg_extra_style: |
     .key.hold {
       fill: orange;
     }
-    
+
     .tabler\:arrow-left-to-arc {
       color: rgb(60, 179, 113);
     }
-    
+
     .key.tap {
       fill: rgb(60, 179, 113);
     }
-    
+
     rect.key {
       fill: rgb(49, 52, 55);
     }
     rect.held {
       fill: rgb(60, 179, 113);
     }
-    
+
     .key.tap.layer-activator {
       fill: orange;
     }
-    
+
     .key.shifted {
       fill: cadetblue;
       translate: 15px 5px;
     }
-
+  footer_text: Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>
+  shrink_wide_legends: 7
+  style_layer_activators: true
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+  glyphs: {}
 parse_config:
-  parse_config:
-    zmk_additional_includes:
-      - "modules/zmk/helpers/include"
-
-    zmk_preamble: |
-      #define CONFIG_WIRELESS
-      #define KEYMAP_DRAWER
-
+  preprocess: true
   skip_binding_parsing: false
+  raw_binding_map:
+    '&caps_word': Caps Word
+    '&soft_off': Soft Off
+    '&printscr_area_file': PrtScr File
+    '&printscr_area_mem': PrtScr Mem
+    '&prntscr_file': PrtScr File
+    '&prntscr_mem': PrtScr Mem
+    '&macro_brackets': []
+    '&macro_parentheses': ()
+    '&macro_braces': {}
+    '&macro_ltgt': <>
+    '&mmv MOVE_UP': $$mdi:arrow-up-bold$$
+    '&mmv MOVE_DOWN': $$mdi:arrow-down-bold$$
+    '&mmv MOVE_LEFT': $$mdi:arrow-left-bold$$
+    '&mmv MOVE_RIGHT': $$mdi:arrow-right-bold$$
+    '&mkp LCLK': $$phosphor:regular/mouse-left-click$$
+    '&mkp MCLK': $$phosphor:regular/mouse-middle-click$$
+    '&mkp RCLK': $$phosphor:regular/mouse-right-click$$
+    '&bt BT_SEL 0':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: '1'
+    '&bt BT_SEL 1':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: '2'
+    '&bt BT_SEL 2':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: '3'
+    '&bt BT_SEL 3':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: '4'
+    '&bt BT_SEL 4':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: '5'
   sticky_label: sticky
-  toggle_label: "$$tabler:arrow-left-to-arc$$"
+  toggle_label: $$tabler:arrow-left-to-arc$$
   tap_toggle_label: tap-toggle
   trans_legend:
-    t: "$$mdi:transfer$$"
+    t: $$mdi:transfer$$
     type: trans
   layer_legend_map: {}
   mark_alternate_layer_activators: false
-
-  raw_binding_map:
-    "&caps_word": Caps Word
-    "&soft_off": Soft Off
-    "&printscr_area_file": "PrtScr File"
-    "&printscr_area_mem": "PrtScr Mem"
-
-    "&mmv MOVE_UP": $$mdi:mouse-move-up$$
-    "&mmv MOVE_DOWN": $$mdi:mouse-move-down$$
-    "&mmv MOVE_LEFT": $$mdi:volume-off$$
-    "&mmv MOVE_RIGHT": $$mdi:volume-off$$
-
-    "&mkp LCLK": $$mdi:mouse-left-click-outline$$
-    "&mkp MCLK": $$mdi:volume-off$$
-    "&mkp RCLK": $$mdi:mouse-right-click-outline$$
-
-    "&bt BT_SEL 0":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: "1"
-    "&bt BT_SEL 1":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: "2"
-    "&bt BT_SEL 2":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: "3"
-    "&bt BT_SEL 3":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: "4"
-    "&bt BT_SEL 4":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: "5"
-
+  modifier_fn_map:
+    left_ctrl: Ctl
+    right_ctrl: Ctl
+    left_shift: Sft
+    right_shift: Sft
+    left_alt: Alt
+    right_alt: AltGr
+    left_gui: Gui
+    right_gui: Gui
+    keycode_combiner: '{mods}+{key}'
+    mod_combiner: '{mod_1}+{mod_2}'
+    special_combinations:
+      left_ctrl+left_alt+left_gui+left_shift: Hyper
+      left_ctrl+left_alt+left_shift: Meh
+  qmk_remove_keycode_prefix:
+  - KC_
+  qmk_keycode_map:
+    XXXXXXX: ''
+    'NO': ''
+    MINUS: '-'
+    MINS: '-'
+    EQUAL: '='
+    EQL: '='
+    LEFT_BRACKET: '['
+    LBRC: '['
+    RIGHT_BRACKET: ']'
+    RBRC: ']'
+    BACKSLASH: \
+    BSLS: \
+    NONUS_HASH: '#'
+    NUHS: '#'
+    SEMICOLON: ;
+    SCLN: ;
+    QUOTE: ''''
+    QUOT: ''''
+    GRAVE: '`'
+    GRV: '`'
+    COMMA: ','
+    COMM: ','
+    DOT: .
+    SLASH: /
+    SLSH: /
+    TILDE: '~'
+    TILD: '~'
+    EXCLAIM: '!'
+    EXLM: '!'
+    AT: '@'
+    HASH: '#'
+    DOLLAR: $
+    DLR: $
+    PERCENT: '%'
+    PERC: '%'
+    CIRCUMFLEX: ^
+    CIRC: ^
+    AMPERSAND: '&'
+    AMPR: '&'
+    ASTERISK: '*'
+    ASTR: '*'
+    LEFT_PAREN: (
+    LPRN: (
+    RIGHT_PAREN: )
+    RPRN: )
+    UNDERSCORE: _
+    UNDS: _
+    PLUS: +
+    LEFT_CURLY_BRACE: '{'
+    LCBR: '{'
+    RIGHT_CURLY_BRACE: '}'
+    RCBR: '}'
+    PIPE: '|'
+    COLON: ':'
+    COLN: ':'
+    DOUBLE_QUOTE: '"'
+    DQUO: '"'
+    DQT: '"'
+    LEFT_ANGLE_BRACKET: <
+    LABK: <
+    LT: <
+    RIGHT_ANGLE_BRACKET: '>'
+    RABK: '>'
+    GT: '>'
+    QUESTION: '?'
+    QUES: '?'
+  zmk_remove_keycode_prefix: []
   zmk_keycode_map:
     C_MUTE: $$mdi:volume-off$$
     C_PLAY_PAUSE: $$mdi:play-pause$$
@@ -131,6 +207,8 @@ parse_config:
     RIGHT_GUI: $$mdi:apple-keyboard-command$$
     LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
     LCTRL: $$mdi:apple-keyboard-control$$
     RCTRL: $$mdi:apple-keyboard-control$$
     TAB: $$mdi:keyboard-tab$$
@@ -139,8 +217,6 @@ parse_config:
     DOWN: $$mdi:arrow-down$$
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
-
-    # default
     EXCLAMATION: '!'
     EXCL: '!'
     AT_SIGN: '@'
@@ -162,116 +238,117 @@ parse_config:
     RIGHT_PARENTHESIS: )
     RPAR: )
     EQUAL:
-      tap: "="
-      shifted: "+"
+      tap: '='
+      shifted: +
     PLUS: +
     MINUS:
-      tap: "-"
-      shifted: "_"
+      tap: '-'
+      shifted: _
     UNDERSCORE: _
     UNDER: _
     SLASH:
-      tap: "/"
-      shifted: "?"
+      tap: /
+      shifted: '?'
     FSLH:
-      tap: "/"
-      shifted: "?"
+      tap: /
+      shifted: '?'
     QUESTION: '?'
     QMARK: '?'
     BACKSLASH:
-      tap: '\'
-      shifted: "|"
+      tap: \
+      shifted: '|'
     BSLH:
-      tap: '\'
-      shifted: "|"
+      tap: \
+      shifted: '|'
     PIPE: '|'
     NON_US_BACKSLASH: \
     PIPE2: '|'
     NON_US_BSLH: '|'
     SEMICOLON:
-      tap: ";"
-      shifted: ":"
+      tap: ;
+      shifted: ':'
     SEMI:
-      tap: ";"
-      shifted: ":"
+      tap: ;
+      shifted: ':'
     COLON: ':'
     SINGLE_QUOTE:
-      tap: "'"
+      tap: ''''
       shifted: '"'
     SQT:
-      tap: "'"
+      tap: ''''
       shifted: '"'
     APOSTROPHE: ''''
     APOS: ''''
     DOUBLE_QUOTES: '"'
     DQT: '"'
     COMMA:
-      tap: ","
-      shifted: "<"
+      tap: ','
+      shifted: <
     LESS_THAN: <
     LT: <
     PERIOD: .
     DOT:
-      tap: "."
-      shifted: ">"
+      tap: .
+      shifted: '>'
     GREATER_THAN: '>'
     GT: '>'
     LEFT_BRACKET:
-      tap: "["
-      shifted: "{"
+      tap: '['
+      shifted: '{'
     LBKT:
-      tap: "["
-      shifted: "{"
+      tap: '['
+      shifted: '{'
     LEFT_BRACE: '{'
     LBRC: '{'
     RIGHT_BRACKET:
-      tap: "]"
-      shifted: "}"
+      tap: ']'
+      shifted: '}'
     RBKT:
-      tap: "]"
-      shifted: "}"
+      tap: ']'
+      shifted: '}'
     RIGHT_BRACE: '}'
     RBRC: '}'
     GRAVE:
-      tap: "`"
-      shifted: "~"
+      tap: '`'
+      shifted: '~'
     TILDE: '~'
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
     KP_COMMA: ','
-    KP_DOT: '.'
+    KP_DOT: .
     KP_MULTIPLY: '*'
-    KP_DIVIDE: '/'
-
+    KP_DIVIDE: /
     N1:
       tap: 1
-      shifted: "!"
+      shifted: '!'
     N2:
       tap: 2
-      shifted: "@"
+      shifted: '@'
     N3:
       tap: 3
-      shifted: "#"
+      shifted: '#'
     N4:
       tap: 4
-      shifted: "$"
+      shifted: $
     N5:
       tap: 5
-      shifted: "%"
+      shifted: '%'
     N6:
       tap: 6
-      shifted: "^"
+      shifted: ^
     N7:
       tap: 7
-      shifted: "&"
+      shifted: '&'
     N8:
       tap: 8
-      shifted: "*"
+      shifted: '*'
     N9:
       tap: 9
-      shifted: "("
+      shifted: (
     N0:
       tap: 0
-      shifted: ")"
+      shifted: )
 
+  zmk_preamble: '#define KEYMAP_DRAWER'
+  zmk_additional_includes: []

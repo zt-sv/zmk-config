@@ -132,7 +132,7 @@ layers:
   - F6
   - F7
   - F8
-  - ''
+  - '&studio_unlock'
   - $$mdi:skip-backward$$
   - $$mdi:volume-medium$$
   - $$mdi:volume-high$$

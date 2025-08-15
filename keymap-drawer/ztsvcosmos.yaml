@@ -1,19 +1,6 @@
-layout: {zmk_keyboard: sofle}
+layout: {zmk_keyboard: ztsvcosmos}
 layers:
-  default:
-  - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
-  - $$mdi:keyboard-esc$$
+  base:
   - Q
   - W
   - E
@@ -24,8 +11,6 @@ layers:
   - I
   - O
   - P
-  - {t: '[', s: '{'}
-  - $$mdi:keyboard-tab$$
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -36,45 +21,23 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
-  - {t: '''', s: '"'}
-  - {t: ']', s: '}'}
   - Z
   - X
   - C
   - V
   - B
-  - $$mdi:volume-off$$
-  - $$mdi:play-pause$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: \, s: '|'}
-  - ''
-  - ''
   - mouse
   - {t: '$$mdi:keyboard-tab$$', h: nav}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:keyboard-esc$$', h: sym}
   - mouse
-  - ''
-  - ''
   nav:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - HOME
   - $$mdi:arrow-up$$
@@ -85,57 +48,33 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - +
-  - '*'
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
   - PAGE DOWN
   - F12
-  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-option$$', s: '%'}
-  - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
-  - /
-  - ''
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
   - UNDO
   - CUT
   - COPY
   - PASTE
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - .
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '=', s: +}
-  - ''
-  - ''
-  - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - media
   - {t: '0', s: )}
-  - ''
-  - ''
   sym:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - '!'
   - '@'
   - '#'
@@ -146,8 +85,6 @@ layers:
   - '*'
   - (
   - )
-  - ''
-  - ''
   - '|'
   - {t: '''', s: '"'}
   - '"'
@@ -158,22 +95,15 @@ layers:
   - +
   - {t: '-', s: _}
   - '|'
-  - ''
-  - ''
   - '~'
   - {t: '`', s: '~'}
   - {t: /, s: '?'}
   - '{'
   - '}'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '=', s: +}
   - _
-  - ''
-  - ''
-  - ''
   - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - media
@@ -181,22 +111,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - ''
-  - ''
-  - ''
   media:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -207,8 +122,6 @@ layers:
   - F10
   - F11
   - F12
-  - ''
-  - ''
   - BT PRV
   - BT NXT
   - PrtScr File
@@ -220,44 +133,22 @@ layers:
   - F7
   - F8
   - ''
-  - ''
-  - ''
   - $$mdi:skip-backward$$
   - $$mdi:volume-medium$$
   - $$mdi:volume-high$$
   - $$mdi:skip-forward$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - F1
   - F2
   - F3
   - F4
-  - ''
-  - ''
-  - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - ''
-  - ''
   - ''
   mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - $$phosphor:regular/mouse-right-click$$
   - '&msc SCRL_UP'
@@ -267,8 +158,6 @@ layers:
   - $$phosphor:regular/mouse-left-click$$
   - $$mdi:arrow-up-bold$$
   - $$phosphor:regular/mouse-right-click$$
-  - ''
-  - ''
   - ''
   - ''
   - '&msc SCRL_LEFT'
@@ -287,13 +176,6 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -303,67 +185,65 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
 combos:
-- p: [25, 34]
+- p: [19, 10]
   k: Caps Word
-  l: [default]
+  l: [base]
   a: top
   o: 3.0
-- p: [20, 21]
+- p: [7, 8]
   k: $$mdi:backspace$$
-  l: [default, nav]
-- p: [15, 14]
+  l: [base, nav]
+- p: [1, 2]
   k: $$mdi:backspace-reverse$$
-  l: [default, nav]
-- p: [17, 16]
+  l: [base, nav]
+- p: [3, 4]
   k: {t: ']', s: '}'}
-  l: [default]
-- p: [16, 15]
+  l: [base]
+- p: [2, 3]
   k: {t: '[', s: '{'}
-  l: [default]
-- p: [17, 15]
+  l: [base]
+- p: [4, 2]
   k: '[]'
-  l: [default]
+  l: [base]
   a: top
   o: 0.15
-- p: [18, 19]
+- p: [5, 6]
   k: (
-  l: [default]
-- p: [19, 20]
+  l: [base]
+- p: [6, 7]
   k: )
-  l: [default]
-- p: [18, 20]
+  l: [base]
+- p: [5, 7]
   k: ()
-  l: [default]
+  l: [base]
   a: top
   o: 0.15
-- p: [39, 40]
+- p: [22, 23]
   k: '{'
-  l: [default]
-- p: [41, 40]
+  l: [base]
+- p: [24, 23]
   k: '}'
-  l: [default]
-- p: [41, 39]
+  l: [base]
+- p: [22, 24]
   k: '{}'
-  l: [default]
+  l: [base]
   a: bottom
   o: 0.2
-- p: [44, 45]
+- p: [25, 26]
   k: <
-  l: [default]
-- p: [45, 46]
+  l: [base]
+- p: [26, 27]
   k: '>'
-  l: [default]
-- p: [44, 46]
+  l: [base]
+- p: [25, 27]
   k: <>
-  l: [default]
+  l: [base]
   a: bottom
   o: 0.2
-- p: [15, 26]
+- p: [2, 11]
   k: {t: /, s: '?'}
-  l: [default]
-- p: [20, 33]
+  l: [base]
+- p: [7, 18]
   k: {t: \, s: '|'}
-  l: [default]
+  l: [base]

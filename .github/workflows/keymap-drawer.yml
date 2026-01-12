@@ -17,6 +17,7 @@ jobs:
     with:
       amend_commit: true
       keymap_patterns: "config/*.keymap"
+      json_path: "boards/shields/ztsvcosmos"
       config_path: "keymap-drawer/config.yml"
       output_folder: "keymap-drawer"
       parse_args: ""

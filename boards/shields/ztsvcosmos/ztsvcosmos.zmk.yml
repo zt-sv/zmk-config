@@ -1,0 +1,11 @@
+file_format: "1"
+id: ztsvcosmos
+name: ztsv-cosmos
+type: shield
+url: https://github.com/ztsv/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - ztsvcosmos_left
+  - ztsvcosmos_right
